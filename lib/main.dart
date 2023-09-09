@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tadeotax_android/pages/home/home_page.dart';
+import 'package:tadeotax_android/pages/login/login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,9 +21,9 @@ class _MyAppState extends State<MyApp> {
       title: 'TadeoTax',
       initialRoute: 'home',
       routes: {
-        'home': (BuildContext context) => const HomePage(),
+        'home': (BuildContext context) => HomePage(),
+        'login': (BuildContext context) => LoginPage(),
       },
     );
   }
 }
- 
