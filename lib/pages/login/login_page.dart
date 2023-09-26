@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'package:flutter/material.dart';
+import 'package:tadeotax_android/pages/register_student/register_student.dart';
+import 'package:tadeotax_android/pages/register_driver/register_driver.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -45,8 +45,26 @@ class _LoginPageState extends State<LoginPage> {
                 print('Contraseña: $password');
 
                 // Luego, puedes agregar la lógica de autenticación y navegación a la siguiente pantalla
+
+                // Navegar a la vista RegisterStudent
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => register_student()),
+                );
               },
               child: Text('Iniciar Sesión'),
+            ),
+            SizedBox(height: 16),
+            TextButton(
+              onPressed: () {
+                // Navegar a la vista RegisterStudent
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => RegisterStudentForm()),
+                );
+              },
+              child: Text('Registrar'),
             ),
           ],
         ),
@@ -60,4 +78,24 @@ class _LoginPageState extends State<LoginPage> {
     passwordController.dispose();
     super.dispose();
   }
+}
+
+class register_student extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Register Student'),
+      ),
+      body: Center(
+        child: Text('Página de registro de estudiantes'),
+      ),
+    );
+  }
+}
+
+void main() {
+  runApp(MaterialApp(
+    home: LoginPage(),
+  ));
 }
