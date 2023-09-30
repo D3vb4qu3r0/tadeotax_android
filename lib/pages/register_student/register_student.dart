@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:tadeotax_android/pages/home/home_controller.dart';
+import 'package:tadeotax_android/pages/login/login_page.dart';
 
 class RegisterStudentForm extends StatefulWidget {
   @override
@@ -23,6 +25,17 @@ class _RegisterStudentFormState extends State<RegisterStudentForm> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            // Agrega la imagen centrada
+            Container(
+              alignment: Alignment.center,
+              child: Image.asset(
+                'assets/img/tadeotax1.png', // Ruta de la imagen en assets
+                width: 130,
+                height: 128, // imagen
+              ),
+            ),
+            SizedBox(
+                height: 24), // Espacio entre la imagen y los campos de datos
             buildTextField(usernameController, 'Username', Icons.person),
             buildTextField(emailController, 'Email', Icons.email),
             buildTextField(phoneController, 'Phone', Icons.phone),
