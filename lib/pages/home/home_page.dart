@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:tadeotax_android/pages/home/home_controller.dart';
+//import 'package:tadeotax_android/pages/home/home_controller.dart';
 import 'package:tadeotax_android/pages/login/login_page.dart';
 
 class HomePage extends StatelessWidget {
-  final HomeController _con = HomeController();
+ // final HomeController _con = HomeController();
   HomePage({super.key});
 
   @override
