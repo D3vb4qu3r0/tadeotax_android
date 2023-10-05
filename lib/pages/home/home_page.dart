@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-//import 'package:tadeotax_android/pages/home/home_controller.dart';
+import 'package:tadeotax_android/pages/driver/trip_completed_driver.dart';
+import 'package:tadeotax_android/pages/home/home_controller.dart';
 import 'package:tadeotax_android/pages/login/login_page.dart';
+import 'package:tadeotax_android/pages/user/trip_completed_user.dart';
 
 class HomePage extends StatelessWidget {
- // final HomeController _con = HomeController();
+  final HomeController _con = HomeController();
   HomePage({super.key});
 
   @override
@@ -61,7 +63,7 @@ class HomePage extends StatelessWidget {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => LoginPage(),
+            builder: (context) => TripUser(),
           ),
         );
       },

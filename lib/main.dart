@@ -1,8 +1,6 @@
-
 import 'package:flutter/material.dart';
 import 'package:tadeotax_android/pages/home/home_page.dart';
 import 'package:tadeotax_android/pages/login/login_page.dart';
-
 
 void main() {
   runApp(const MyApp());
