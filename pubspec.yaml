@@ -38,6 +38,7 @@ dependencies:
   flutter_custom_clippers: ^2.1.0
   firebase_auth: ^4.10.1
   firebase_core: ^2.16.0
+  google_maps_flutter: ^2.5.0
 
 
 dev_dependencies:
