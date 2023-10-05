@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "321702372149",
+    "project_id": "tadeotax-9fdc7",
+    "storage_bucket": "tadeotax-9fdc7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:321702372149:android:36afb4b7b600eabf74227c",
+        "android_client_info": {
+          "package_name": "com.example.tadeotax_android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClRrE8c2eABCzbN-_wS_A_DDye_PwWN8M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
