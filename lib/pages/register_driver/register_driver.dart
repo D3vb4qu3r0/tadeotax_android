@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tadeotax_android/pages/user/screen_user_controller.dart';
 
 class RegisterDriverForm extends StatefulWidget {
   @override
@@ -6,6 +7,8 @@ class RegisterDriverForm extends StatefulWidget {
 }
 
 class _RegisterDriverFormState extends State<RegisterDriverForm> {
+  final ScrenUserController _screnUserController = ScrenUserController();
+
   TextEditingController usernameController = TextEditingController();
   TextEditingController emailController = TextEditingController();
   TextEditingController phoneController = TextEditingController();
@@ -59,6 +62,8 @@ class _RegisterDriverFormState extends State<RegisterDriverForm> {
             SizedBox(height: 24),
             ElevatedButton(
               onPressed: () {
+                _screnUserController.navigateToScreenUser(context);
+
                 // Aquí puedes agregar la lógica para registrar al conductor
                 String username = usernameController.text;
                 String email = emailController.text;

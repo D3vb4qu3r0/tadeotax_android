@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:tadeotax_android/pages/user/trip_completed_user_controller.dart';
 
 class screen_user extends StatefulWidget {
   const screen_user({super.key});
@@ -9,6 +10,7 @@ class screen_user extends StatefulWidget {
 }
 
 class _screen_user_State extends State<screen_user> {
+  final TripCompletedController _tripCompletedController = TripCompletedController();
   final Completer<GoogleMapController> _controller =
       Completer<GoogleMapController>();
 
@@ -53,7 +55,7 @@ Widget build(BuildContext context) {
         top: 30,
         left: 20,
         width: 400,
-        height: 200,
+        height: 210,
         child: Container(
           margin: EdgeInsets.all(46.0),
           decoration: BoxDecoration(
@@ -120,7 +122,9 @@ Widget build(BuildContext context) {
         bottom: 40,
         left: 120,
        child: FloatingActionButton.extended(
-        onPressed: () {},
+        onPressed: () {
+          _tripCompletedController.navigateToTripCompleted(context);
+        },
         label: const Text('SOLICITAR  >', 
           style: TextStyle(
                   fontSize: 20,

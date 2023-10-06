@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:tadeotax_android/pages/login/login_controller.dart';
 import '../../widgest/button_app.dart';
+import '../register_driver/register_driver_controller.dart';
 //import '../user/history/user_history_controller.dart';
 
 class LoginPage extends StatefulWidget {
@@ -15,6 +16,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  final  UserRegisterController _userRegisterController = UserRegisterController();
   final loginController _controller = loginController();
   //final UserHistoryController _con = UserHistoryController();
   @override
@@ -89,7 +91,7 @@ class _LoginPageState extends State<LoginPage> {
                             Text(
                               'Welcome to TADEOTAX',
                               style: TextStyle(
-                                fontSize: 30,
+                                fontSize: 28,
                                 fontWeight: FontWeight.bold,
                                 color: Color(0xff918592),
                               ),
@@ -148,7 +150,9 @@ class _LoginPageState extends State<LoginPage> {
                                 radius: 50,
                                 fontSize: 20,
                                 icon: Icons.arrow_forward_ios,
-                                onPressed: (_controller.login) //{_con.navigateToHistorypage(context);}, //_controller.login
+                                onPressed: () {
+                                  _userRegisterController.navigateToDriverRegister(context);
+                                  }//{_con.navigateToHistorypage(context);}, //_controller.login
                               ),
                             ),
                             const SizedBox(height: 20),

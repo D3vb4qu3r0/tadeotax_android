@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:tadeotax_android/pages/home/home_page.dart';
 import 'package:tadeotax_android/pages/login/login_page.dart';
+import 'package:tadeotax_android/pages/register_driver/register_driver.dart';
 import 'package:tadeotax_android/pages/user/history/user_history_page.dart';
+import 'package:tadeotax_android/pages/user/screen_user.dart';
+import 'package:tadeotax_android/pages/user/trip_completed_user.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +27,10 @@ class _MyAppState extends State<MyApp> {
       routes: {
         'home': (BuildContext context) => HomePage(),
         'login': (BuildContext context) => LoginPage(),
-        'history': (BuildContext context) => UserHistoryPage()
+        'history': (BuildContext context) => UserHistoryPage(),
+        'registerDriver': (BuildContext context) => RegisterDriverForm(),
+        'screenUser': (BuildContext context) => screen_user(),
+        'tripCompleted': (BuildContext context) => TripUser(),
       },
     );
   }
