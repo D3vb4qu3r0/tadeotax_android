@@ -1,6 +1,6 @@
 # TADEOTAX
 
-![TADEOTAXM](https://github.com/dabaquero991/tadeotax_android/assets/76493792/016a0249-7619-49f2-8ea5-767c5de7b2ef)
+![TADEOTAXM](https://github.com/dabaquero991/tadeotax_android/assets/76493792/1d561d6a-5341-4779-9f46-27277345dab0)
 
 TADEOTAX es una aplicación móvil que permite a los usuarios solicitar y pagar taxis en Bogotá, Colombia.
 
@@ -11,8 +11,7 @@ TADEOTAX es una aplicación móvil que permite a los usuarios solicitar y pagar 
 * Seguimiento en tiempo real del taxi
 * Calificación del conductor
 
-![image](https://github.com/dabaquero991/tadeotax_android/assets/76493792/49400bcc-88a1-4ede-910f-2d8c785d14dc)
-
+![image](https://github.com/dabaquero991/tadeotax_android/assets/76493792/8ee667d6-6cc4-465d-a515-b5e6ff869f29)
 
 ## Instalación
 
@@ -22,7 +21,7 @@ Para instalar TADEOTAX, sigue estos pasos:
 2. Busca "TADEOTAX".
 3. Toca "Instalar".
    
-![image](https://github.com/dabaquero991/tadeotax_android/assets/76493792/412e16ca-17e5-4612-a016-61da5cbb54ee)
+![image](https://github.com/dabaquero991/tadeotax_android/assets/76493792/5648c75f-8554-41f9-b75f-1a5fce52433c)
 
 ## Uso
 
