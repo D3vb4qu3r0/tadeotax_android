@@ -60,13 +60,12 @@ class HomePage extends StatelessWidget {
   Widget _imageTypeUser(BuildContext context, image) {
     return GestureDetector(
       onTap: () {
-        _con.navigateToLoginPage(context);
-        /*Navigator.push(
+        Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => TripUser(),
+            builder: (context) => TripDriver(),
           ),
-        );*/
+        );
       },
       child: CircleAvatar(
           backgroundImage: AssetImage(image),
