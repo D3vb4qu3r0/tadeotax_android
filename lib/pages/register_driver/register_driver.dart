@@ -7,7 +7,7 @@ class RegisterDriverForm extends StatefulWidget {
 }
 
 class _RegisterDriverFormState extends State<RegisterDriverForm> {
-  final ScrenUserController _screnUserController = ScrenUserController();
+  final ScreenUserController _screnUserController = ScreenUserController();
 
   TextEditingController usernameController = TextEditingController();
   TextEditingController emailController = TextEditingController();
